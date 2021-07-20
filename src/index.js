@@ -13,19 +13,20 @@ class Gumnode {
   async request(endpoint = "", options = {}) {
     const url = `${this.basePath}${endpoint}`;
 
+    const { params, ...otherOptions } = options;
+
     const headers = {
       "Content-type": "application/json",
     };
 
-    const params = {
-      access_token: this.access_token,
-    };
-
     const config = {
-      params,
+      ...otherOptions,
+      params: {
+        access_token: this.access_token,
+        ...params,
+      },
       url,
       ...headers,
-      ...options,
     };
 
     return new Promise((resolve, reject) => {
