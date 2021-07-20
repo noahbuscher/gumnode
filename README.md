@@ -28,3 +28,8 @@ api
   .then((response) => console.log("Found product:", response))
   .catch((response) => console.log("Error:", response.message));
 ```
+
+## Todo
+
+- [ ] Add docs to functions
+- [ ] Add tests
