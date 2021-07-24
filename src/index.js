@@ -26,7 +26,7 @@ class Gumnode {
         ...params,
       },
       url,
-      ...headers,
+      headers,
     };
 
     return new Promise((resolve, reject) => {
@@ -42,7 +42,7 @@ class Gumnode {
             reject(this.buildError(response.data.message));
           }
         })
-        .catch((error) => reject(error));
+        .catch((error) => reject(this.buildError(error)));
     });
   }
 
