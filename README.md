@@ -1,8 +1,8 @@
-# Gum*node*
+# Gumnode
 
-Gumnode is an unoffical Node.js API client library for Gumroad.
+Gumnode is a Node.js API wrapper for [Gumroad](https://gumroad.com).
 
-It's promise-based, slim, and supports all of Gumroad's latest API endpoints.
+It's promise-based, slim, and supports all of Gumroad's [latest API endpoints](https://app.gumroad.com/api).
 
 ## Install
 
