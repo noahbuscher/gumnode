@@ -2,7 +2,9 @@
 
 Gumnode is a Node.js API wrapper for [Gumroad](https://gumroad.com).
 
-It's promise-based, slim, and supports all of Gumroad's [latest API endpoints](https://app.gumroad.com/api).
+It's promise-based, slim, and supports Gumroad's [latest API endpoints](https://app.gumroad.com/api).
+
+> Submit an [Issue](https://github.com/noahbuscher/gumnode/issues) if you find an outdated endpoint or find a new one you want Gumnode to support.
 
 ## Install
 
